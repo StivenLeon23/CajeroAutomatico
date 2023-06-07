@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <H1 id="Holauser">Bienvenido@ de nuevo, <span id="Elusuario"></span>!</H1>
+    <H1 id="Holauser">Hola de nuevo</H1>
 
     <h2>¿Que operación quieres realizar?</h2>
 
-    <button onclick="IngresarD">Ingresar Dinero</button>
-    <button onclick="RetirarD">Retirar Dinero</button>
-    <button onclick="ConsulSal">Consultar Saldo</button>
+    <button onclick="consultarSaldo()">Consultar saldo</button>
+    <button onclick="realizarIngreso()">Realizar ingreso</button>
+    <button onclick="realizarRetiro()">Realizar retiro</button>
+
+
 
 </body>
 <script src="principalop.js"></script>

@@ -1,0 +1,17 @@
+body {
+    background-color: #506266;
+}
+
+nav {
+    margin-bottom: 15px ;
+    text-align: center;
+}
+
+form {
+    margin-top: 100px;
+}
+
+form button .bot {
+    color: black;    
+}
+

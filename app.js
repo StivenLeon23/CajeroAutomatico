@@ -6,7 +6,7 @@ let cuentas = [
 
   let formuIng = document.getElementById("formu");
 
-  formuIng.addEventListener("submit", function(event) {
+  formuIng.addEventListener( "submit", function(event) {
     event.preventDefault();
 
     let UsuarioI = document.getElementById("usuario").value;
@@ -20,6 +20,7 @@ let cuentas = [
 
     if (Ingreso) {
       alert(`Hola de nuevo, ${Ingreso.usuario}!`);
+      localStorage.setItem("usuarioActual", JSON.stringify(Ingreso));
       window.location.href = "principal.html"
       
     } else {
@@ -30,3 +31,5 @@ let cuentas = [
     document.getElementById("usuario").value = "";
     document.getElementById("password").value = "";
   });
+
+
